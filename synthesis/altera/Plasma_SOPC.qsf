@@ -1,0 +1,149 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+# Date created = 09:36:11  September 30, 2015
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		Plasma_SOPC_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone II"
+set_global_assignment -name DEVICE EP2C8Q208C8
+set_global_assignment -name TOP_LEVEL_ENTITY Plasma_SOPC
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "09:36:11  SEPTEMBER 30, 2015"
+set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 208
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS "AS INPUT TRI-STATED"
+set_global_assignment -name CYCLONEII_RESERVE_NCEO_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name RESERVE_ASDO_AFTER_CONFIGURATION "AS INPUT TRI-STATED"
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS_NO_OUTPUT_GND "AS OUTPUT DRIVING AN UNSPECIFIED SIGNAL"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_location_assignment PIN_130 -to clk
+set_location_assignment PIN_39 -to rst_n
+set_location_assignment PIN_59 -to sdram_addr[0]
+set_location_assignment PIN_58 -to sdram_addr[1]
+set_location_assignment PIN_57 -to sdram_addr[2]
+set_location_assignment PIN_56 -to sdram_addr[3]
+set_location_assignment PIN_105 -to sdram_addr[4]
+set_location_assignment PIN_106 -to sdram_addr[5]
+set_location_assignment PIN_104 -to sdram_addr[6]
+set_location_assignment PIN_103 -to sdram_addr[7]
+set_location_assignment PIN_102 -to sdram_addr[8]
+set_location_assignment PIN_101 -to sdram_addr[9]
+set_location_assignment PIN_60 -to sdram_addr[10]
+set_location_assignment PIN_99 -to sdram_addr[11]
+set_location_assignment PIN_97 -to sdram_addr[12]
+set_location_assignment PIN_68 -to sdram_data[0]
+set_location_assignment PIN_69 -to sdram_data[1]
+set_location_assignment PIN_70 -to sdram_data[2]
+set_location_assignment PIN_72 -to sdram_data[3]
+set_location_assignment PIN_74 -to sdram_data[4]
+set_location_assignment PIN_75 -to sdram_data[5]
+set_location_assignment PIN_76 -to sdram_data[6]
+set_location_assignment PIN_77 -to sdram_data[7]
+set_location_assignment PIN_86 -to sdram_data[8]
+set_location_assignment PIN_87 -to sdram_data[9]
+set_location_assignment PIN_88 -to sdram_data[10]
+set_location_assignment PIN_89 -to sdram_data[11]
+set_location_assignment PIN_90 -to sdram_data[12]
+set_location_assignment PIN_92 -to sdram_data[13]
+set_location_assignment PIN_94 -to sdram_data[14]
+set_location_assignment PIN_95 -to sdram_data[15]
+set_location_assignment PIN_84 -to sdram_dqm[0]
+set_location_assignment PIN_80 -to sdram_dqm[1]
+set_location_assignment PIN_61 -to sdram_ba[1]
+set_location_assignment PIN_63 -to sdram_ba[0]
+set_location_assignment PIN_67 -to sdram_ras_n
+set_location_assignment PIN_82 -to sdram_cas_n
+set_location_assignment PIN_96 -to sdram_clk
+set_location_assignment PIN_4 -to sdram_cke
+set_location_assignment PIN_81 -to sdram_we_n
+set_location_assignment PIN_64 -to sdram_cs_n
+set_location_assignment PIN_116 -to led[7]
+set_location_assignment PIN_115 -to led[6]
+set_location_assignment PIN_114 -to led[5]
+set_location_assignment PIN_113 -to led[4]
+set_location_assignment PIN_112 -to led[3]
+set_location_assignment PIN_107 -to led[2]
+set_location_assignment PIN_108 -to led[1]
+set_location_assignment PIN_110 -to led[0]
+set_location_assignment PIN_48 -to sw[7]
+set_location_assignment PIN_47 -to sw[6]
+set_location_assignment PIN_46 -to sw[5]
+set_location_assignment PIN_45 -to sw[4]
+set_location_assignment PIN_44 -to sw[3]
+set_location_assignment PIN_43 -to sw[2]
+set_location_assignment PIN_41 -to sw[1]
+set_location_assignment PIN_40 -to sw[0]
+set_global_assignment -name ENABLE_SIGNALTAP OFF
+set_global_assignment -name USE_SIGNALTAP_FILE output_files/stp1.stp
+set_global_assignment -name SLD_FILE "E:/ProJect/Plasma_SOPC/synthesis/altera/output_files/stp1_auto_stripped.stp"
+set_global_assignment -name VERILOG_FILE ../../sopc/altera/Plasma_SOPC.v
+set_global_assignment -name VERILOG_FILE ../../sopc/altera/wb_ram_top.v
+set_global_assignment -name VERILOG_FILE ../../sopc/wb_conmax/wb_conmax_top.v
+set_global_assignment -name VERILOG_FILE ../../sopc/wb_conmax/wb_conmax_slave_if.v
+set_global_assignment -name VERILOG_FILE ../../sopc/wb_conmax/wb_conmax_rf.v
+set_global_assignment -name VERILOG_FILE ../../sopc/wb_conmax/wb_conmax_pri_enc.v
+set_global_assignment -name VERILOG_FILE ../../sopc/wb_conmax/wb_conmax_pri_dec.v
+set_global_assignment -name VERILOG_FILE ../../sopc/wb_conmax/wb_conmax_msel.v
+set_global_assignment -name VERILOG_FILE ../../sopc/wb_conmax/wb_conmax_master_if.v
+set_global_assignment -name VERILOG_FILE ../../sopc/wb_conmax/wb_conmax_defines.v
+set_global_assignment -name VERILOG_FILE ../../sopc/wb_conmax/wb_conmax_arb.v
+set_global_assignment -name VERILOG_FILE ../../sopc/wb_gpio/gpio_top.v
+set_global_assignment -name VERILOG_FILE ../../sopc/wb_gpio/gpio_defines.v
+set_global_assignment -name VERILOG_FILE ../../sopc/wb_sdram/wb_sdram.v
+set_global_assignment -name VHDL_FILE ../../plasma_mips/shifter.vhd
+set_global_assignment -name VHDL_FILE ../../plasma_mips/reg_bank.vhd
+set_global_assignment -name VHDL_FILE ../../plasma_mips/pipeline.vhd
+set_global_assignment -name VHDL_FILE ../../plasma_mips/pc_next.vhd
+set_global_assignment -name VHDL_FILE ../../plasma_mips/mult.vhd
+set_global_assignment -name VHDL_FILE ../../plasma_mips/mipslite_pack.vhd
+set_global_assignment -name VHDL_FILE ../../plasma_mips/mipslite_cpu.vhd
+set_global_assignment -name VHDL_FILE ../../plasma_mips/mem_ctrl.vhd
+set_global_assignment -name VHDL_FILE ../../plasma_mips/control.vhd
+set_global_assignment -name VHDL_FILE ../../plasma_mips/bus_mux.vhd
+set_global_assignment -name VHDL_FILE ../../plasma_mips/alu.vhd
+set_global_assignment -name VERILOG_FILE ../../plasma_mips/plasma_mips.v
+set_global_assignment -name SDC_FILE Plasma_SOPC.sdc
+set_global_assignment -name QIP_FILE ../../sopc/altera/pll.qip
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
